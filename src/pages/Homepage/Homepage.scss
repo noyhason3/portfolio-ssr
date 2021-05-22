@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Courgette';
+    src: url('../../assets/fonts/Courgette-Regular.ttf');
+}
+
+@import '../../assets/scss/setup/_variables.scss';
+
+.homepage {
+    font-family: 'Courgette';
+    max-width: 900px;
+    font-size: 3rem;
+    color: $clr2;
+    margin: auto;
+
+    .main-image{
+        width: 300px;
+        opacity: 0.8;
+    }
+}
