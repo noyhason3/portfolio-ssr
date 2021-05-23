@@ -130,143 +130,143 @@ advanced capabilities.`,
 ];
 
 function App() {
-  // const classes = useStyles();
-
-  // return (
-  //   <React.Fragment>
-  //     <CssBaseline />
-  //     <AppBar position='relative'>
-  //       <Toolbar>
-  //         <CameraIcon className={classes.icon} />
-  //         <Typography variant='h6' color='inherit' noWrap>
-  //           Noy's portfolio
-  //         </Typography>
-  //       </Toolbar>
-  //     </AppBar>
-  //     <main>
-  //       {/* Hero unit */}
-  //       <div className={classes.heroContent}>
-  //         <Container maxWidth='sm'>
-  //           <Typography
-  //             component='h1'
-  //             variant='h2'
-  //             align='center'
-  //             color='textPrimary'
-  //             gutterBottom
-  //           >
-  //             Welcome to my portfolio
-  //           </Typography>
-  //           <Typography
-  //             variant='h5'
-  //             align='center'
-  //             color='textSecondary'
-  //             paragraph
-  //           >
-  //             Junior Full-Stack Web Developer. Ambitious, quick-learner and like
-  //             to be challenged. Have experience writing in the latest
-  //             technologies as Vue.js, React.js, ES6, Scss and more.
-  //           </Typography>
-  //           <div className={classes.heroButtons}>
-  //             <Grid container spacing={2} justify='center'>
-  //               <Grid item>
-  //                 <Button variant='outlined' color='primary' onClick=''>
-  //                   <Link
-  //                     href='https://www.linkedin.com/in/noy-hason-a3a97a202/'
-  //                     target='_blank'
-  //                   >
-  //                     LinkedIn
-  //                   </Link>
-  //                 </Button>
-  //               </Grid>
-  //               <Grid item>
-  //                 {/* <Button variant='contained' color='primary'> */}
-  //                 <Button variant='outlined' color='primary'>
-  //                   <Link href='https://github.com/noyhason3' target='_blank'>
-  //                     GitHub
-  //                   </Link>
-  //                 </Button>
-  //               </Grid>
-  //             </Grid>
-  //           </div>
-  //         </Container>
-  //       </div>
-  //       <Container className={classes.cardGrid} maxWidth='md'>
-  //         {/* End hero unit */}
-  //         <Grid container spacing={4}>
-  //           {cards.map((card) => (
-  //             <Grid item key={card} xs={12} sm={6} md={4}>
-  //               <Card className={classes.card}>
-  //                 <CardMedia
-  //                   // className={classes.cardMedia}
-  //                   component='img'
-  //                   // height="140"
-  //                   // width="140"
-  //                   image={card.img}
-  //                   title='Image title'
-  //                 />
-  //                 {/* <img src='./assets/imgs/1.png' /> */}
-  //                 <CardContent className={classes.cardContent}>
-  //                   <Typography gutterBottom variant='h5' component='h2'>
-  //                     {card.name}
-  //                   </Typography>
-  //                   <Typography>{card.description}</Typography>
-  //                 </CardContent>
-  //                 <CardActions>
-  //                   <Button size='small' color='primary'>
-  //                     <Link
-  //                       size='small'
-  //                       color='primary'
-  //                       href={card.link}
-  //                       target='_blank'
-  //                     >
-  //                       Show demo
-  //                     </Link>
-  //                   </Button>
-  //                   {/* <Button size='small' color='primary'>
-  //                     More info
-  //                   </Button> */}
-  //                 </CardActions>
-  //               </Card>
-  //             </Grid>
-  //           ))}
-  //         </Grid>
-  //       </Container>
-  //     </main>
-  //     {/* Footer */}
-  //     <footer className={classes.footer}>
-  //       <Typography variant='h6' align='center' gutterBottom>
-  //         {/* Footer */}
-  //       </Typography>
-  //       <Typography
-  //         variant='subtitle1'
-  //         align='center'
-  //         color='textSecondary'
-  //         component='p'
-  //       >
-  //         {/* Something here to give the footer a purpose! */}
-  //       </Typography>
-  //       <Copyright />
-  //     </footer>
-  //     {/* End footer */}
-  //   </React.Fragment>
-  // );
-
-  const [count, setCount] = React.useState(0);
-
-  const increment = () => {
-    setCount(count + 1);
-  };
-  const decrement = () => {
-    setCount(count - 1);
-  };
+  const classes = useStyles();
 
   return (
-    <section>
-      <h1>{count}</h1>
-      <button onClick={increment}>+</button>
-      <button onClick={decrement}>-</button>
-    </section>
+    <React.Fragment>
+      <CssBaseline />
+      <AppBar position='relative'>
+        <Toolbar>
+          <CameraIcon className={classes.icon} />
+          <Typography variant='h6' color='inherit' noWrap>
+            Noy's portfolio
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <main>
+        {/* Hero unit */}
+        <div className={classes.heroContent}>
+          <Container maxWidth='sm'>
+            <Typography
+              component='h1'
+              variant='h2'
+              align='center'
+              color='textPrimary'
+              gutterBottom
+            >
+              Welcome to my portfolio
+            </Typography>
+            <Typography
+              variant='h5'
+              align='center'
+              color='textSecondary'
+              paragraph
+            >
+              Junior Full-Stack Web Developer. Ambitious, quick-learner and like
+              to be challenged. Have experience writing in the latest
+              technologies as Vue.js, React.js, ES6, Scss and more.
+            </Typography>
+            <div className={classes.heroButtons}>
+              <Grid container spacing={2} justify='center'>
+                <Grid item>
+                  <Button variant='outlined' color='primary' onClick=''>
+                    <Link
+                      href='https://www.linkedin.com/in/noy-hason-a3a97a202/'
+                      target='_blank'
+                    >
+                      LinkedIn
+                    </Link>
+                  </Button>
+                </Grid>
+                <Grid item>
+                  {/* <Button variant='contained' color='primary'> */}
+                  <Button variant='outlined' color='primary'>
+                    <Link href='https://github.com/noyhason3' target='_blank'>
+                      GitHub
+                    </Link>
+                  </Button>
+                </Grid>
+              </Grid>
+            </div>
+          </Container>
+        </div>
+        <Container className={classes.cardGrid} maxWidth='md'>
+          {/* End hero unit */}
+          <Grid container spacing={4}>
+            {cards.map((card) => (
+              <Grid item key={card} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    // className={classes.cardMedia}
+                    component='img'
+                    // height="140"
+                    // width="140"
+                    image={card.img}
+                    title='Image title'
+                  />
+                  {/* <img src='./assets/imgs/1.png' /> */}
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant='h5' component='h2'>
+                      {card.name}
+                    </Typography>
+                    <Typography>{card.description}</Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size='small' color='primary'>
+                      <Link
+                        size='small'
+                        color='primary'
+                        href={card.link}
+                        target='_blank'
+                      >
+                        Show demo
+                      </Link>
+                    </Button>
+                    {/* <Button size='small' color='primary'>
+                      More info
+                    </Button> */}
+                  </CardActions>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </main>
+      {/* Footer */}
+      <footer className={classes.footer}>
+        <Typography variant='h6' align='center' gutterBottom>
+          {/* Footer */}
+        </Typography>
+        <Typography
+          variant='subtitle1'
+          align='center'
+          color='textSecondary'
+          component='p'
+        >
+          {/* Something here to give the footer a purpose! */}
+        </Typography>
+        <Copyright />
+      </footer>
+      {/* End footer */}
+    </React.Fragment>
   );
+
+//   const [count, setCount] = React.useState(0);
+
+//   const increment = () => {
+//     setCount(count + 1);
+//   };
+//   const decrement = () => {
+//     setCount(count - 1);
+//   };
+
+//   return (
+//     <section>
+//       <h1>{count}</h1>
+//       <button onClick={increment}>+</button>
+//       <button onClick={decrement}>-</button>
+//     </section>
+//   );
 }
 
 export default App;
