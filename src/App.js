@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 
-import mainImage from './assets/imgs/main-image.jpg';
 import prelloImg from './assets/imgs/prello.jpeg';
 import bitcoinImg from './assets/imgs/bitcoin-2.jpeg';
 import memeGeneratorImg from './assets/imgs/meme-generator.jpeg';
@@ -10,6 +9,7 @@ import bookStoreImg from './assets/imgs/book-store.jpeg';
 import misterToyImg from './assets/imgs/mister-toy.jpeg';
 import touchNumsImg from './assets/imgs/touch-nums.jpeg';
 import inPictureImg from './assets/imgs/in-picture.jpeg';
+import shoppingAppImg from './assets/imgs/shopping-app.jpeg';
 import './assets/scss/basics/_helpers.scss';
 import '../src/pages/Homepage/Homepage.scss';
 
@@ -86,6 +86,12 @@ advanced capabilities.`,
     link: 'https://prello-app.herokuapp.com/#/',
   },
   {
+    name: 'Shopping-App',
+    description: `A web application for shopping`,
+    img: shoppingAppImg,
+    link: 'https://noyhason3.github.io/shopping-cart-noy/#/',
+  },
+  {
     name: 'Bitcoin-App',
     description: `A web application for bitcoin transactions that manages users and contacts`,
     img: bitcoinImg,
@@ -109,12 +115,12 @@ advanced capabilities.`,
     img: bookStoreImg,
     link: 'https://noyhason3.github.io/books-shop/',
   },
-  {
-    name: 'Mister-Toy',
-    description: `A web application for managing a toy store with signup option.`,
-    img: misterToyImg,
-    link: 'https://noyhason3.github.io/books-shop/',
-  },
+  // {
+  //   name: 'Mister-Toy',
+  //   description: `A web application for managing a toy store with signup option.`,
+  //   img: misterToyImg,
+  //   link: 'https://noyhason3.github.io/books-shop/',
+  // },
   {
     name: 'Touch-Nums',
     description: `Could you count till 100?`,
